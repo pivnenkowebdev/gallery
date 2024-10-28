@@ -1,0 +1,75 @@
+.fetch-form{
+
+   position: relative;
+   width: 300px;
+   height: 50px;
+   flex-shrink: 0;
+
+   &__search{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      padding: 10px 60px 10px 10px;
+      border-radius: 20px;
+      width: 300px;
+      background-color: #0e0d0d;
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #d8d8d8;
+      box-shadow: 0px 0px 4px #3a87eb, inset 0px 0px 4px #3a87eb;
+
+      &::placeholder{
+         font-size: 20px;
+         font-weight: 500;
+         text-transform: uppercase;
+      }
+
+
+      &::-webkit-search-cancel-button {
+         -webkit-appearance: none;
+         cursor: pointer;
+         height: 20px;
+         width: 20px;
+         background-image: url(./../img/icons/cross.svg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         transition: transform 0.2s;
+         
+            &:hover{
+               transform: rotate(90deg);
+            }
+     }
+
+   }
+
+   &__submit{
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 50px;
+      padding: 8px;
+      border-radius: 50%;
+      background-color: #a59b9b;
+      object-fit: cover;
+      transition: background-color 0.2s, transform;
+
+      &:hover{
+         background-color: $btnBorderColor;
+         transform: scale(1.2);
+         box-shadow: 0px 0px 4px #3a87eb, inset 0px 0px 4px #3a87eb;
+
+         img{
+            transform: scale(1) rotate(90deg);
+         }
+      }
+
+      img{
+         transform: scale(0.6);
+         transition: transform 0.2s;
+      }
+   }
+
+}
+

@@ -1,0 +1,36 @@
+.list-item{
+
+   &__btn{
+      padding: 10px 20px;
+      display: flex;
+      column-gap: 20px;
+      align-items: center;
+      background-color: $bgButtons;
+      border-radius: 10px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      transition: border-color 0.2s, background-color 0.2s, transform 0.2s, box-shadow;
+
+      &:hover{
+         border-color: $btnBorderColor;
+         background-color: #0f0f0f;
+         transform: scale(1.05);
+         box-shadow: 0px 0px 4px #3a87eb, inset 0px 0px 4px #3a87eb;
+      }
+
+      &:active{
+         opacity: 0.8;
+      }
+   }
+   
+   &__text{
+      color: #e2e2e2;
+      font-weight: 500;
+      font-size: 18px;
+      font-family: monospace;
+   }
+
+   &__img{
+      max-width: 30px;
+      max-height: 20px;
+   }
+}

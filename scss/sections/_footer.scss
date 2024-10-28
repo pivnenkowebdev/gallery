@@ -1,0 +1,28 @@
+.footer {
+
+   padding: 10px 0;
+   border-top: 2px solid #fff;
+
+   &__content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__year{
+      font-size: 20px;
+      font-weight: 500;
+   }
+}
+
+.logo,
+.github  {
+   display: inline-block;
+   width: 100px;
+
+   &:hover{
+      opacity: 0.5;
+   }
+
+   
+}
