@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
          imagesHolder: document.querySelectorAll('.photos__item img'),
          result:'',
          choiceBtn: document.querySelectorAll('[data-info]'),
+         id: 'nUXWhoHMFs0c0jAEivKi0l7rEEgE3MM-35Z2tEeF4gQ',
          
          // =============functions
          // get images from api
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
                
                try{
 
-               const call = await fetch (`https://api.unsplash.com/search/photos?client_id=WGkjS5dARnRF_xWGDjrZftOS8kvQLgXbFpmaiWJOuic&query=${this.value}&per_page=12&orientation=portrait`);
+               const call = await fetch (`https://api.unsplash.com/search/photos?client_id=${this.id}&query=${this.value}&per_page=12&orientation=portrait`);
 
                let answer = await call.json();
 
